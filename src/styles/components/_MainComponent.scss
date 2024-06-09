@@ -1,0 +1,14 @@
+@import '../utils/variables.scss';
+
+.main {
+    width: 100vw;
+    padding-top: 130px;
+    background-color: $greymedium;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+
+    img {
+        width: 100px;
+    }
+}

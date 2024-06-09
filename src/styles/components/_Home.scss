@@ -1,0 +1,9 @@
+@import '../utils/variables.scss';
+
+.home {
+    width: 100vw;
+    background-color: $greymedium;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}

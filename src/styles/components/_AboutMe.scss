@@ -1,0 +1,73 @@
+@import '../utils/variables.scss';
+
+@import '../utils/variables.scss';
+
+// Definir nuevos colores de neón más suaves
+$neon-pink: rgba(255, 0, 255, 0.6); // Color rosa neón suave
+$neon-blue: rgba(0, 255, 255, 0.6); // Color azul neón suave
+
+.about {
+    width: 100vw;
+    height: auto;
+    background-color: $greymedium;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .titulo {
+        margin-bottom: 15px;
+        color: white;
+    }
+
+    .aboutme {
+        background-color: $greymedium;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+
+    .encabezado-amarillo {
+        margin-bottom: 10px;
+        color: $neon-pink; // Cambio de color a rosa neón suave
+        margin-top: 20px;
+    }
+
+    img {
+        width: 90%;
+        height: auto;
+        border: 1px solid $neon-blue; // Cambio de color de borde a azul neón suave
+        border-radius: 6px;
+        position: relative;
+        background-color: $greymedium;
+        box-shadow: 0 0 3px $neon-blue, 0 0 6px $neon-blue; // Cambio de color de sombra a azul neón suave y más discreto
+        transition: box-shadow 0.3s ease;
+    }
+    
+    img::before {
+        content: '';
+        position: absolute;
+        top: -3px;
+        left: -3px;
+        right: -3px;
+        bottom: -3px;
+        border-radius: 6px;
+        background: linear-gradient(45deg, transparent, $neon-pink, transparent); // Cambio de color de gradiente a rosa neón suave
+        z-index: -1;
+        filter: blur(3px);
+    }
+    
+    img:hover {
+        box-shadow: 0 0 6px $neon-blue, 0 0 12px $neon-blue; // Cambio de color de sombra al hacer hover a azul neón suave
+    }
+
+    p {
+        color: white;
+        margin-left: 23px;
+        margin-right: 23px;
+    }
+}

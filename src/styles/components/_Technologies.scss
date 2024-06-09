@@ -1,0 +1,80 @@
+@import '../utils/variables.scss';
+
+// Definir nuevos colores de neón más suaves
+$neon-pink: rgba(255, 0, 255, 0.6); // Color rosa neón suave
+$neon-blue: rgba(0, 255, 255, 0.6); // Color azul neón suave
+
+.technologies {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        color: white;
+        margin: 10px;
+    }
+
+    .tecnologias {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+
+        .contenedor-logo {
+            width: 160px;
+            height: 160px;
+            padding: 8px;
+            border: 1px solid $neon-pink; // Cambio de color de borde
+            border-radius: 6px;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            background-color: $greymedium;
+            box-shadow: 0 0 3px $neon-pink, 0 0 6px $neon-pink; // Cambio de color de sombra más suave
+        }
+
+        .contenedor-logo::before {
+            content: '';
+            position: absolute;
+            top: -3px;
+            left: -3px;
+            right: -3px;
+            bottom: -3px;
+            border-radius: 6px;
+            background: linear-gradient(45deg, transparent, $neon-blue, transparent); // Cambio de color de gradiente
+            z-index: -1;
+            filter: blur(3px);
+        }
+
+        .contenedor-logo:hover {
+            box-shadow: 0 0 6px $neon-pink, 0 0 12px $neon-pink; // Cambio de color de sombra al hacer hover más suave
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            padding: 10px;
+        }
+
+        .html { width: 110px; }
+        .css { width: 130px; }
+        .js { width: 200px; }
+        .node { width: 200px; }
+        .postgre { width: 140px; }
+        .sqlite { width: 130px; }
+        .mongo { width: 130px; }
+        .react { width: 130px; }
+        .github { width: 130px; }
+        .docker { width: 130px; }
+    }
+}

@@ -1,0 +1,14 @@
+@import '../utils/variables.scss';
+
+.header {
+    width: 100vw;
+    background-color: $greymedium;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed; /* Fija el header en su lugar */
+    top: 0; /* Fija el header en la parte superior de la página */
+    left: 0; /* Asegura que el header esté alineado a la izquierda */
+    z-index: 1000; /* Asegura que el header se muestre por encima de otros elementos */
+}
