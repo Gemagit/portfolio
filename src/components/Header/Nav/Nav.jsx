@@ -21,10 +21,10 @@ const Nav = () => {
             <input type="checkbox" id="menu" checked={menuOpen} readOnly />
             <ul className={menuOpen ? "menu-open" : ""} onClick={closeMenu}>
                 <li><Link className="letrasnav" to='/'>Home</Link></li>
-                <li><Link className="letrasnav" to='/about'>About</Link></li>
-                <li><Link className="letrasnav" to='/technologies'>Technologies</Link></li>
-                <li><Link className="letrasnav" to='/portfolio'>Portfolio</Link></li>
-                <li><Link className="letrasnav" to='/contact'>Contact</Link></li>
+                <li><Link className="letrasnav" to='/technologies'>Tecnologías</Link></li>
+                <li><Link className="letrasnav" to='/about'>Sobre mí</Link></li>
+                <li><Link className="letrasnav" to='/hobbies'>Aficiones</Link></li>
+                <li><Link className="letrasnav" to='/contact'>Contacto</Link></li>
             </ul>
         </nav>
     );

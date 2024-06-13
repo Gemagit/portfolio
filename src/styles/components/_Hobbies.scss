@@ -2,21 +2,23 @@
 
 
 
-.about {
+.hobbies {
     width: 100vw;
     height: auto;
     background-color: $greymedium;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: left;
+    margin-top: 20px;
 
     .titulo {
         margin-bottom:15px;
         color: white;
+        margin-left: 20px;
     }
 
-    .aboutme {
+    .hobbie {
         background-color: $greymedium;
         width: 100%;
         height: auto;
@@ -24,13 +26,14 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-bottom: 25px;
+        margin-bottom: 35px;
     }
 
     .encabezado-amarillo {
         margin-bottom: 10px;
         color: $neon-pink; // Cambio de color a rosa neón suave
-        margin-top: 20px;
+        margin: 20px;
+        align-items: left;
     }
 
     img {
@@ -42,6 +45,7 @@
         background-color: $greymedium;
         box-shadow: 0 0 3px $neon-blue, 0 0 6px $neon-blue; // Cambio de color de sombra a azul neón suave y más discreto
         transition: box-shadow 0.3s ease;
+        margin-bottom: 20px;
     }
     
     img::before {

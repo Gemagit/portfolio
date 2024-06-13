@@ -4,6 +4,7 @@ import recipapi from '../../../assets/recipapi.png';
 import zara from '../../../assets/zara.png';
 import personal from '../../../assets/personal.png';
 import quizmanga from '../../../assets/quizmanga.png';
+import pokeapp from '../../../assets/desktop.png'
 
 const Portfolio = () => {
     const handleRedirect = (url) => {
@@ -12,7 +13,7 @@ const Portfolio = () => {
 
     return (
         <main className="portfolio">
-            <h2>PORTFOLIO</h2>
+            <h2 className='portfolio-titulo' >PORTFOLIO</h2>
             <section className="container">
                 <article className="card">
                     <img src={personal} alt="Project 4" />
@@ -25,6 +26,21 @@ const Portfolio = () => {
                         <button
                             className="neon-button"
                             onClick={() => handleRedirect('https://github.com/Gemagit/miPaginaPersonal_2024')}>
+                            View code
+                        </button>
+                    </div>
+                </article>
+                <article className="card">
+                    <img src={pokeapp} alt="Project 3" />
+                    <div className="buttons">
+                        <button
+                            className="neon-button"
+                            onClick={() => handleRedirect('https://dynamic-fairy-a02c01.netlify.app')}>
+                            View app
+                        </button>
+                        <button
+                            className="neon-button"
+                            onClick={() => handleRedirect('https://github.com/Gemagit/pokeApp_react')}>
                             View code
                         </button>
                     </div>
@@ -49,7 +65,7 @@ const Portfolio = () => {
                     <div className="buttons">
                         <button
                             className="neon-button"
-                            onClick={() => handleRedirect('https://www.example3.com')}>
+                            onClick={() => handleRedirect('https://singular-platypus-5af356.netlify.app')}>
                             View app
                         </button>
                         <button

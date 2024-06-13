@@ -4,6 +4,7 @@
 $neon-pink: rgba(255, 0, 255, 0.6); // Color rosa neón suave
 $neon-blue: rgba(0, 255, 255, 0.6); // Color azul neón suave
 
+
 .portfolio {
     width: 100vw;
     height: auto;
@@ -12,7 +13,7 @@ $neon-blue: rgba(0, 255, 255, 0.6); // Color azul neón suave
     justify-content: center;
     align-items: center;
 
-    h2 {
+    .portfolio-titulo {
         color: white;
         margin: 10px;
     }

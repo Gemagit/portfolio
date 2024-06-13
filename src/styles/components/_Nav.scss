@@ -2,7 +2,7 @@
 
 .nav {
     width: 100vw;
-    height: 140px;
+    height: 130px;
     position: relative;
     display: flex;
     flex-direction: row;
@@ -55,7 +55,7 @@
             margin: 2px 15px;
 
             &:hover {
-                background-color: $Mikadoyellow;
+                background-color: $neon-pink;
                 color: black;
 
                 &>a {
@@ -63,7 +63,7 @@
                     display: block;
                     height: 100%;
                     width: 100%;
-                    color: $Mikadoyellow; // Color de las letras al hacer hover
+                    color: $neon-pink; // Color de las letras al hacer hover
                 }
             }
 

@@ -1,0 +1,54 @@
+@import '../utils/variables.scss';
+
+.contact {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    background-color: $greymedium;
+    padding: 20px;
+
+    h2 {
+        color: white;
+        margin-bottom: 20px;
+    }
+
+    .contact-container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .contact-button {
+        width: 100%;
+        background-color: $greymedium;
+        border: 2px solid $neon-pink;
+        color: $neon-pink;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        font-size: 16px;
+        transition: 0.3s;
+        border-radius: 5px;
+        cursor: pointer;
+        box-shadow: 0 0 5px $neon-pink, 0 0 10px $neon-pink;
+
+        img {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    .contact-button:hover {
+        box-shadow: 0 0 10px $neon-pink, 0 0 20px $neon-pink;
+    }
+}

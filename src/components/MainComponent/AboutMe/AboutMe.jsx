@@ -7,7 +7,7 @@ const AboutMe = () => {
         <>
             <section className="about">
                 <article>
-                    <h2 className='titulo'>ABOUT</h2>
+                    <h2 className='titulo'>SOBRE MÍ</h2>
                 </article>
                 <article className='aboutme'>
                     <img src={MiFoto}></img>

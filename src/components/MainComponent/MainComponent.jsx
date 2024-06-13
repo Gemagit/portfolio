@@ -5,6 +5,8 @@ import AboutMe from './AboutMe/AboutMe';
 import Contact from './Contact/Contact';
 import Technologies from './Technologies/Technologies';
 import Portfolio from './Portfolio/Portfolio';
+import Hobbies from './Hobbies/Hobbies';
+
 
 const MainComponent = () => {
     return (
@@ -16,6 +18,7 @@ const MainComponent = () => {
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/technologies" element={<Technologies />} />
                     <Route path="/portfolio" element={<Portfolio />} />
+                    <Route path="/hobbies" element={<Hobbies />} />
                     <Route path="/*" element={<Navigate to={"/"} />} />
                 </Routes>
             </main>
