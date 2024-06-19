@@ -16,7 +16,7 @@ const Nav = () => {
 
     return (
         <nav className="nav">
-
+            <h2 className='minombre'>Gema Millán</h2>
             <label htmlFor="menu" onClick={toggleMenu}><img src={hamburguesa} alt="hamburguesa" width={"50px"} /></label>
             <input type="checkbox" id="menu" checked={menuOpen} readOnly />
             <ul className={menuOpen ? "menu-open" : ""} onClick={closeMenu}>

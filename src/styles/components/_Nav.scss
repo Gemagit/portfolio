@@ -2,15 +2,22 @@
 
 .nav {
     width: 100vw;
-    height: 130px;
+    height: 140px;
     position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding-right: 20px;
+    padding-left: 20px;
     z-index: 1000;
 
-
+    &>.minombre {
+        width:60%;
+        margin-top: 50px;
+        font-size: 32px;
+        color:$neon-pink;
+        text-shadow: 0 0 1px $neon-pink, 0 0 8px $neon-pink, 0 0 3px $neon-pink;
+    }
 
     &>label {
         margin-top: 30px;
@@ -102,7 +109,7 @@
     @media only screen and (min-width: 720px) {
         .nav {
             width: 100%;
-            height: 80px;
+            height: 170px;
             position: relative;
             display: flex;
             flex-direction: row;
@@ -110,14 +117,23 @@
             background-color: $greymedium;
             padding-left: 15px;
             padding-right: 15px;
+
+            &>.minombre {
+                width:60%;
+                margin-top: 50px;
+                margin-left: 40px;
+                font-size: 60px;
+                color:$neon-pink;
+                text-shadow: 0 0 1px $neon-pink, 0 0 8px $neon-pink, 0 0 3px $neon-pink;
+            }
     
             &>label {
                 margin-top: 30px;
                 text-align: left;
     
                 img {
-                    width: 40px;
-                    margin:0px;
+                    width: 80px;
+                    margin-bottom:30px;
                 }
             }
     
@@ -151,8 +167,12 @@
                 justify-content: center;
                 list-style: none;
                 display: none;
-                width: 100%;
-                padding-top: 10px;
+                background-color: $greymedium;
+                width: 100vw;
+                z-index: 1000;
+                padding-bottom: 15px;
+                margin-left: 35px;
+                font-size:18px;
     
                 &>li {
                     margin: 10px;
@@ -209,10 +229,19 @@
     @media only screen and (min-width: 1200px) {
     
         .nav {
-            height: 100px;
+            height: 150px;
             width: 100%;
             position: relative;
             background-color: $greymedium;
+
+            &>.minombre {
+                width:60%;
+                margin-top: 50px;
+                margin-left: 65px;
+                font-size: 60px;
+                color:$neon-pink;
+                text-shadow: 0 0 1px $neon-pink, 0 0 8px $neon-pink, 0 0 3px $neon-pink;
+            }
     
     
             &>label {
@@ -226,14 +255,13 @@
                 justify-content: center;
                 align-items: center;
                 background-color: $greymedium;
-                margin-top: 40px;
-                margin-bottom: 40px;
+                margin-top: 50px;
+                gap:70px;
                 
                
     
                 &>li {
                     font-size: 8px;
-                    margin-left: 100px;
                     color: white;
     
     

@@ -1,8 +1,6 @@
 @import '../utils/variables.scss';
 
-// Definir nuevos colores de neón más suaves
-$neon-pink: rgba(255, 0, 255, 0.6); // Color rosa neón suave
-$neon-blue: rgba(0, 255, 255, 0.6); // Color azul neón suave
+
 
 .technologies {
     width: 100vw;
@@ -11,6 +9,7 @@ $neon-blue: rgba(0, 255, 255, 0.6); // Color azul neón suave
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 30px;
 
     h2 {
         color: white;
@@ -109,8 +108,9 @@ $neon-blue: rgba(0, 255, 255, 0.6); // Color azul neón suave
 }
 
 @media only screen and (min-width:700px) {
-    
+
     .technologies {
+        margin-top: 40px;
 
         .tecnologias {
             width: 40%;
@@ -129,6 +129,7 @@ $neon-blue: rgba(0, 255, 255, 0.6); // Color azul neón suave
 
 @media only screen and (min-width:1200px) {
     .technologies {
+        margin-top: 140px;
 
         .tecnologias {
             width: 30%;
@@ -143,4 +144,3 @@ $neon-blue: rgba(0, 255, 255, 0.6); // Color azul neón suave
         }
     }
 }
-

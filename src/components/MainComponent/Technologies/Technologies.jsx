@@ -17,7 +17,7 @@ const Technologies = () => {
     return (
         <>
             <main className="technologies">
-            <h2>TECHNOLOGIES</h2>
+            <h2>TECNOLOGÍAS</h2>
                 <section className='tecnologias'>
                     <article className="contenedor-logo">
                         <img className="html" src={html} alt="html" />
