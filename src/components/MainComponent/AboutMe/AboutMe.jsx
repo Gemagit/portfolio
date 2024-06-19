@@ -1,5 +1,5 @@
 import React from 'react';
-import MiFoto from '../../../assets/fotobnw.jpg';
+import MiFoto from '../../../assets/autoretrato.jpeg';
 
 
 const AboutMe = () => {

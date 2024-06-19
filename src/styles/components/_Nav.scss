@@ -98,3 +98,201 @@
         margin-bottom:  2px;
       }
     }
+
+    @media only screen and (min-width: 720px) {
+        .nav {
+            width: 100%;
+            height: 80px;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: $greymedium;
+            padding-left: 15px;
+            padding-right: 15px;
+    
+            &>label {
+                margin-top: 30px;
+                text-align: left;
+    
+                img {
+                    width: 40px;
+                    margin:0px;
+                }
+            }
+    
+            .logo-anchor {
+                width: 290px;
+    
+                &>.logo {
+                    width: 240px;
+                    margin-top:10px;
+                }
+            }
+    
+    
+    
+    
+            // Menu hamburguesa
+            &>input {
+                display: none;
+            }
+    
+            &>input:checked~ul {
+                display: block; // changes ul display to block when input is checked
+            }
+    
+            &>ul {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                list-style: none;
+                display: none;
+                width: 100%;
+                padding-top: 10px;
+    
+                &>li {
+                    margin: 10px;
+    
+                    &:hover {
+                        color: black;
+    
+                        &>a {
+                            text-decoration: none;
+                            display: block;
+                            height: 100%;
+                            width: 100%;
+                            color: white; // Color de las letras al hacer hover
+                        }
+                    }
+    
+                    &>a {
+                        color: white; // Color de las letras por defecto
+                        
+                        text-decoration: none;
+                        display: block;
+                        height: 100%;
+                        width: 100%;
+                        padding: 10px; // Opcional: para añadir un poco de espacio dentro del enlace
+                    }
+                }
+            }
+        }
+    
+        .perfil-btn {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+            margin-right: 20px;
+          }
+    
+          .perfil-icon {
+            width: 60px;
+            height: 60px;
+          }
+    
+          .letrasnav {
+            padding: 7px;
+          }
+    
+          .letras-nav-icon {
+            margin-bottom:  2px;
+          }
+        }
+    
+    
+    
+    
+    @media only screen and (min-width: 1200px) {
+    
+        .nav {
+            height: 100px;
+            width: 100%;
+            position: relative;
+            background-color: $greymedium;
+    
+    
+            &>label {
+                display: none;
+            }
+    
+            &>ul {
+                position: static;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                background-color: $greymedium;
+                margin-top: 40px;
+                margin-bottom: 40px;
+                
+               
+    
+                &>li {
+                    font-size: 8px;
+                    margin-left: 100px;
+                    color: white;
+    
+    
+                    &:hover {
+                       
+                        color: black;
+    
+                        &>a {
+                            text-decoration: none;
+                            display: block;
+                            height: 100%;
+                            width: 100%;
+    
+                        }
+                    }
+    
+                    &>a {
+                        color: white;
+                        font-size: x-large;
+                        padding-bottom: 15px;
+                    }
+    
+                    
+                }
+    
+            }
+    
+            .logo-anchor {
+                width: 290px;
+               
+        
+                &>.logo {
+                    width: 240px;
+                    margin-top:10px;
+                }
+            }
+            .perfil-btn {
+                display: flex;
+                align-items: center;
+                margin-left: auto;
+                margin-right: 20px;
+                padding-bottom: 70px;
+              }
+        
+              .perfil-icon {
+                width: 50px;
+                height: 50px;
+              }
+    
+              .letrasnav {
+                padding: 7px;
+                font-size: large;
+              }
+    
+              .letras-nav-icon {
+                padding:0px;
+              }
+            }
+        
+            
+          }
+        

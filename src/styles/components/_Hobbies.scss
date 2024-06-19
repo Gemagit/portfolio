@@ -9,13 +9,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left;
+    align-items: center;
     margin-top: 20px;
 
     .titulo {
-        margin-bottom:15px;
+        margin-bottom: 15px;
         color: white;
-        margin-left: 20px;
     }
 
     .hobbie {
@@ -47,7 +46,7 @@
         transition: box-shadow 0.3s ease;
         margin-bottom: 20px;
     }
-    
+
     img::before {
         content: '';
         position: absolute;
@@ -60,7 +59,7 @@
         z-index: -1;
         filter: blur(3px);
     }
-    
+
     img:hover {
         box-shadow: 0 0 6px $neon-blue, 0 0 12px $neon-blue; // Cambio de color de sombra al hacer hover a azul neón suave
     }
@@ -69,5 +68,149 @@
         color: white;
         margin-left: 23px;
         margin-right: 23px;
+        text-align: justify;
+    }
+}
+
+@media only screen and (min-width:700px) {
+    .hobbies {
+        width: 100vw;
+        height: auto;
+        background-color: $greymedium;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        margin-top: 20px;
+
+        .titulo {
+            margin-bottom: 15px;
+            color: white;
+        }
+
+        .hobbie {
+            background-color: $greymedium;
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 75px;
+        }
+
+        .encabezado-amarillo {
+            margin-bottom: 10px;
+            color: $neon-pink; // Cambio de color a rosa neón suave
+            margin: 20px;
+            align-items: left;
+        }
+
+        img {
+            width: 80%;
+            height: auto;
+            border: 1px solid $neon-blue; // Cambio de color de borde a azul neón suave
+            border-radius: 6px;
+            position: relative;
+            background-color: $greymedium;
+            box-shadow: 0 0 3px $neon-blue, 0 0 6px $neon-blue; // Cambio de color de sombra a azul neón suave y más discreto
+            transition: box-shadow 0.3s ease;
+            margin-bottom: 20px;
+        }
+
+        img::before {
+            content: '';
+            position: absolute;
+            top: -3px;
+            left: -3px;
+            right: -3px;
+            bottom: -3px;
+            border-radius: 6px;
+            background: linear-gradient(45deg, transparent, $neon-pink, transparent); // Cambio de color de gradiente a rosa neón suave
+            z-index: -1;
+            filter: blur(3px);
+        }
+
+        img:hover {
+            box-shadow: 0 0 6px $neon-blue, 0 0 12px $neon-blue; // Cambio de color de sombra al hacer hover a azul neón suave
+        }
+
+        p {
+            color: white;
+            font-size:large;
+            width: 80%;
+        }
+    }
+
+}
+
+@media only screen and (min-width:1200px) {
+    .hobbies {
+        width: 100vw;
+        height: auto;
+        background-color: $greymedium;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 0px;
+
+        .titulo {
+            margin-bottom: 25px;
+            margin-top:0px;
+            color: white;
+        }
+
+        .hobbie {
+            background-color: $greymedium;
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 75px;
+            margin-top: 30px;
+        }
+
+        .encabezado-amarillo {
+            margin-bottom: 10px;
+            color: $neon-pink; // Cambio de color a rosa neón suave
+            margin: 20px;
+            font-size: 24px;
+        }
+
+        img {
+            width: 50%;
+            height: auto;
+            border: 1px solid $neon-blue; // Cambio de color de borde a azul neón suave
+            border-radius: 6px;
+            position: relative;
+            background-color: $greymedium;
+            box-shadow: 0 0 3px $neon-blue, 0 0 6px $neon-blue; // Cambio de color de sombra a azul neón suave y más discreto
+            transition: box-shadow 0.3s ease;
+            margin-bottom: 20px;
+        }
+
+        img::before {
+            content: '';
+            position: absolute;
+            top: -3px;
+            left: -3px;
+            right: -3px;
+            bottom: -3px;
+            border-radius: 6px;
+            background: linear-gradient(45deg, transparent, $neon-pink, transparent); // Cambio de color de gradiente a rosa neón suave
+            z-index: -1;
+            filter: blur(3px);
+        }
+
+        img:hover {
+            box-shadow: 0 0 6px $neon-blue, 0 0 12px $neon-blue; // Cambio de color de sombra al hacer hover a azul neón suave
+        }
+
+        p {
+            color: white;
+            width: 60%;
+        }
     }
 }

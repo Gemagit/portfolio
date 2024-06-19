@@ -14,7 +14,6 @@ $neon-blue: rgba(0, 255, 255, 0.6); // Color azul neón suave
 
     h2 {
         color: white;
-        margin: 10px;
     }
 
     .tecnologias {
@@ -26,6 +25,7 @@ $neon-blue: rgba(0, 255, 255, 0.6); // Color azul neón suave
         gap: 10px;
         justify-content: center;
         align-items: center;
+        margin-top: 30px;
 
         .contenedor-logo {
             width: 160px;
@@ -66,15 +66,81 @@ $neon-blue: rgba(0, 255, 255, 0.6); // Color azul neón suave
             padding: 10px;
         }
 
-        .html { width: 110px; }
-        .css { width: 130px; }
-        .js { width: 200px; }
-        .node { width: 200px; }
-        .postgre { width: 140px; }
-        .sqlite { width: 130px; }
-        .mongo { width: 130px; }
-        .react { width: 130px; }
-        .github { width: 130px; }
-        .docker { width: 130px; }
+        .html {
+            width: 110px;
+        }
+
+        .css {
+            width: 130px;
+        }
+
+        .js {
+            width: 200px;
+        }
+
+        .node {
+            width: 200px;
+        }
+
+        .postgre {
+            width: 140px;
+        }
+
+        .sqlite {
+            width: 130px;
+        }
+
+        .mongo {
+            width: 130px;
+        }
+
+        .react {
+            width: 130px;
+        }
+
+        .github {
+            width: 130px;
+        }
+
+        .docker {
+            width: 130px;
+        }
     }
 }
+
+@media only screen and (min-width:700px) {
+    
+    .technologies {
+
+        .tecnologias {
+            width: 40%;
+            height: auto;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    .technologies {
+
+        .tecnologias {
+            width: 30%;
+            height: auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+    }
+}
+
