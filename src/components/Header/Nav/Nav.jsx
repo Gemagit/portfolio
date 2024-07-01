@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import hamburguesa from '../../../assets/hamburguesa.png';
+import hamburguesa from '../../../assets/menu-de-hamburguesas.png';
 
 const Nav = () => {
 

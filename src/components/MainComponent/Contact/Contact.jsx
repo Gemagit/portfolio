@@ -21,11 +21,6 @@ const Contact = () => {
                 </button>
                 <button 
                     className="contact-button" 
-                    onClick={() => handleRedirect('tel:+34605397796')}>
-                    <img src={phoneIcon} alt="Phone" /> Phone
-                </button>
-                <button 
-                    className="contact-button" 
                     onClick={() => handleRedirect('https://www.linkedin.com/in/gema-mill%C3%A1n-casado-102615231/')}>
                     <img src={linkedinIcon} alt="LinkedIn" /> LinkedIn
                 </button>
